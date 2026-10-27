@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JobScout</title>
+<meta name="description" content="JobScout is a private, single-user job-search assistant that reads its owner's job-alert emails and prepares applications for the owner's approval.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d2330;
+    --muted: #5b6475;
+    --accent: #1f5fbf;
+    --rule: #dfe3ea;
+    --panel: #f4f6fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151c;
+      --text: #e6e9f0;
+      --muted: #9aa3b5;
+      --accent: #7fb0ff;
+      --rule: #2a3040;
+      --panel: #1a1f2b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12151c;
+    --text: #e6e9f0;
+    --muted: #9aa3b5;
+    --accent: #7fb0ff;
+    --rule: #2a3040;
+    --panel: #1a1f2b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 16px 4rem; }
+  h1 { font-size: 2.2rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2.2rem 0 .5rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); }
+  .tagline { font-size: 1.15rem; color: var(--muted); margin: 0 0 1.5rem; }
+  p, li { margin: .5rem 0; }
+  ul { padding-left: 1.3rem; }
+  a { color: var(--accent); }
+  .note { background: var(--panel); border-left: 3px solid var(--accent); padding: .75rem 1rem; border-radius: 4px; }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+  footer a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>JobScout</h1>
+  <p class="tagline">A private job-search assistant that does the sorting, so its owner can do the deciding.</p>
+
+  <p class="note">JobScout is a personal tool run by its owner on the owner's own server. It is not a public service, and there is nothing to sign up for.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li><strong>Collects job postings</strong> from the owner's own LinkedIn and Indeed job-alert emails and from the public job-board interfaces that employers publish for their careers pages.</li>
+    <li><strong>Narrows them down</strong> against criteria the owner sets, and produces a daily shortlist.</li>
+    <li><strong>Prepares draft applications</strong> from facts the owner has verified. Nothing is submitted without the owner's approval, and only on sites where automated submission is permitted.</li>
+    <li><strong>Tracks outcomes</strong> by suggesting what an employer's reply means, such as an interview invitation or a rejection. The owner confirms each one.</li>
+  </ul>
+
+  <h2>How it uses Gmail</h2>
+  <p>JobScout asks for read-only access to the owner's Gmail (<code>gmail.readonly</code>) so it can read job-alert emails and employer replies. It cannot send, delete or change email. The only Google account connected is the owner's own. The details, including what is stored, what is shared and how to revoke access, are in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <span>Contact: <a href="mailto:timxu2007@gmail.com">timxu2007@gmail.com</a></span>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JobScout Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d2330;
+    --muted: #5b6475;
+    --accent: #1f5fbf;
+    --rule: #dfe3ea;
+    --panel: #f4f6fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151c;
+      --text: #e6e9f0;
+      --muted: #9aa3b5;
+      --accent: #7fb0ff;
+      --rule: #2a3040;
+      --panel: #1a1f2b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12151c;
+    --text: #e6e9f0;
+    --muted: #9aa3b5;
+    --accent: #7fb0ff;
+    --rule: #2a3040;
+    --panel: #1a1f2b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 16px 4rem; }
+  h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2.2rem 0 .5rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); }
+  p, li { margin: .5rem 0; }
+  ul { padding-left: 1.3rem; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); margin: 0 0 1.5rem; }
+  .note { background: var(--panel); border-left: 3px solid var(--accent); padding: .75rem 1rem; border-radius: 4px; }
+  nav { margin-bottom: 1.5rem; font-size: .95rem; }
+  code { font: .9em ui-monospace, SFMono-Regular, Consolas, monospace; background: var(--panel); padding: .1em .35em; border-radius: 3px; overflow-wrap: anywhere; }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">&larr; JobScout home</a></nav>
+  <h1>JobScout Privacy Policy</h1>
+  <p class="meta">Last updated: October 27, 2026</p>
+
+  <p class="note">JobScout is a private, single-user tool. The only Google account it is ever connected to is its owner's own, and it keeps that account's data on a server the owner controls.</p>
+
+  <h2>1. What JobScout is</h2>
+  <p>JobScout is a personal job-search assistant written and operated by Tim Xu (&ldquo;the owner&rdquo;). It runs on a server controlled by the owner. It is not offered to the public, has no sign-up, and has no accounts for anyone other than the owner.</p>
+
+  <h2>2. Google user data JobScout accesses</h2>
+  <p>JobScout asks for one Google permission, read-only access to Gmail:</p>
+  <p><code>https://www.googleapis.com/auth/gmail.readonly</code></p>
+  <p>This permission lets JobScout read messages. It does not allow JobScout to send, delete, label or change any email, or to change anything else in the Google account.</p>
+  <p>JobScout is set up to look at two kinds of messages:</p>
+  <ul>
+    <li>Job-alert emails from LinkedIn and Indeed, found by configured sender and subject filters, looking back at most 14 days.</li>
+    <li>Replies from employers the owner has applied to, used to keep track of application outcomes.</li>
+  </ul>
+  <p>Other messages are not processed.</p>
+
+  <h2>3. How the data is used</h2>
+  <ul>
+    <li><strong>Building a job shortlist.</strong> From each job-alert email JobScout records the job title, company, location, any salary text, the alert source and the time received.</li>
+    <li><strong>Tracking application outcomes.</strong> From an employer reply JobScout suggests one outcome from a fixed list, such as an interview invitation or a rejection. The owner confirms or rejects every suggestion.</li>
+  </ul>
+  <p>The data is used only to provide these features to the owner. It is not used for advertising, profiling, or any purpose for anyone else.</p>
+
+  <h2>4. Storage and security</h2>
+  <ul>
+    <li>Data is stored on the owner's own server. Copies of processed job-alert emails are kept so that results can be reproduced.</li>
+    <li>Daily backups are made to storage controlled by the owner.</li>
+    <li>The Google access token and client credentials are kept in access-restricted files on that server and are never stored in source control. The code repository is private.</li>
+  </ul>
+
+  <h2>5. Sharing and third parties</h2>
+  <p>JobScout does not sell, rent or share Google user data, and no one other than the owner reads it.</p>
+  <p>There is one disclosed transfer. To classify an employer reply, the text of that email may be sent to an AI model provider through its paid API (for example Google Gemini or Anthropic Claude). It is sent only to return a classification to the owner, and only to providers whose terms exclude training on inputs. Google user data is not used to develop, improve or train generalized artificial-intelligence or machine-learning models.</p>
+  <p>Beyond that, data is disclosed only where the law requires it.</p>
+
+  <h2>6. Google API Services User Data Policy</h2>
+  <p>JobScout's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>7. Retention, access and deletion</h2>
+  <ul>
+    <li>Data stays on the owner's server until the owner deletes it.</li>
+    <li>Access can be withdrawn at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Withdrawing it stops JobScout from reading the mailbox immediately.</li>
+    <li>To delete stored data, the owner deletes JobScout's database, its stored raw emails and its backups.</li>
+  </ul>
+
+  <h2>8. Changes and contact</h2>
+  <p>If this policy changes, the date at the top will change. Questions can be sent to <a href="mailto:timxu2007@gmail.com">timxu2007@gmail.com</a>.</p>
+
+  <footer>JobScout &middot; a private tool operated by Tim Xu</footer>
+</main>
+</body>
+</html>
